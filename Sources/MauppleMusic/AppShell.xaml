@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MauppleMusic.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:pages="clr-namespace:MauppleMusic.Pages"
+    Shell.FlyoutBehavior="Disabled">
+
+    <TabBar>
+        <ShellContent Title="Écouter"
+                      Icon="play_circle.png"
+                      ContentTemplate="{DataTemplate pages:ListenPage}"
+                      Route="Listen" />
+
+        <ShellContent Title="Explorer"
+                      Icon="grid_view.png"
+                      ContentTemplate="{DataTemplate pages:ExplorePage}"
+                      Route="Explore" />
+
+        <ShellContent Title="Radio"
+                      Icon="cell_tower.png"
+                      ContentTemplate="{DataTemplate pages:RadioPage}"
+                      Route="Radio" />
+
+        <ShellContent Title="Bibliothèque"
+                      Icon="library_music.png"
+                      ContentTemplate="{DataTemplate pages:LibraryPage}"
+                      Route="Library" />
+
+        <ShellContent Title="Recherche"
+                      Icon="search.png"
+                      ContentTemplate="{DataTemplate pages:SearchPage}"
+                      Route="Search" />
+    </TabBar>
+</Shell>
