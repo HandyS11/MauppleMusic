@@ -14,7 +14,7 @@
 
     <Style TargetType="Label" BasedOn="{StaticResource AlignmentCenterLabel}" x:Key="SubTiltleLabel">
         <Setter Property="TextColor" Value="{StaticResource Primary}"/>
-        <Setter Property="FontSize" Value="22"/>
+        <Setter Property="FontSize" Value="20"/>
     </Style>
 
 </ResourceDictionary>

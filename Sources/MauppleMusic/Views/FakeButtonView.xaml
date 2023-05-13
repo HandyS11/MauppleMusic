@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="MauppleMusic.Views.FakeButtonView">
+
+    <ContentView.Resources>
+        <Style TargetType="Image">
+            <Setter Property="Aspect" Value="AspectFit"/>
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="{StaticResource Primary}"/>
+            <Setter Property="VerticalOptions" Value="Center"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="FontAttributes" Value="Bold"/>
+        </Style>
+    </ContentView.Resources>
+
+    <Frame BackgroundColor="{AppThemeBinding Light={StaticResource Gray100}, Dark={StaticResource Gray600}}" 
+           Padding="8">
+        <HorizontalStackLayout HorizontalOptions="Center" 
+                               MaximumHeightRequest="35">
+            <Image x:Name="buttonImage" Source="star.png">
+                <Image.Behaviors>
+                    <toolkit:IconTintColorBehavior TintColor="{StaticResource Primary}"/>
+                </Image.Behaviors>
+            </Image>
+            <Label x:Name="buttonLabel" Text="Something"/>
+        </HorizontalStackLayout>
+    </Frame>
+</ContentView>
