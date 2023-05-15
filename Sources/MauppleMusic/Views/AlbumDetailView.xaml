@@ -6,14 +6,17 @@
              x:Class="MauppleMusic.Views.AlbumDetailView">
 
     <VerticalStackLayout HorizontalOptions="Center">
-        <toolkit:AvatarView Margin="75,10" 
-                            WidthRequest="250" HeightRequest="250"
+        <toolkit:AvatarView x:Name="imageAvatarView" 
+                            Margin="75,10" 
+                            WidthRequest="250" 
+                            HeightRequest="250"
                             ImageSource="cover1.png"
                             CornerRadius="10"/>
-        <Label x:Name="albumTitle" 
+        <Label x:Name="titleLabel" 
                Text="Album Title"
+               Margin="20,0"
                Style="{StaticResource TitleLabel}"/>
-        <Label x:Name="albumAuthor"
+        <Label x:Name="authorLabel"
                Text="Album Author"
                Style="{StaticResource SubTiltleLabel}"/>
         
@@ -26,13 +29,15 @@
                 </Style>
             </HorizontalStackLayout.Resources>
             
-            <Label Text="Theme"/>
+            <Label x:Name="themeLabel" 
+                   Text="Theme"/>
             <Label Text="·"
                    Margin="5,0"/>
-            <Label Text="2000"/>
+            <Label x:Name="yearLabel" 
+                   Text="2000"/>
             <Label Text="·"
                    Margin="5,0"/>
-            
+
             <Image Source="genetics.png"
                    Aspect="AspectFit" Margin="0,0,3,0"
                    MaximumHeightRequest="12">
@@ -40,8 +45,7 @@
                     <toolkit:IconTintColorBehavior TintColor="{StaticResource Gray400}"/>
                 </Image.Behaviors>
             </Image>
-
-            <Label x:Name="albumQuality"
+            <Label x:Name="qualityLabel"
                    Text="Quality"/>
         </HorizontalStackLayout>
 

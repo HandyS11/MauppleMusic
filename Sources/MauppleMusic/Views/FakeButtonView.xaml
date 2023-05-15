@@ -17,7 +17,7 @@
         </Style>
     </ContentView.Resources>
 
-    <Frame BackgroundColor="{AppThemeBinding Light={StaticResource Gray100}, Dark={StaticResource Gray600}}" 
+    <Frame BackgroundColor="{AppThemeBinding Light={StaticResource LightBlue}, Dark={StaticResource Gray600}}" 
            Padding="8">
         <HorizontalStackLayout HorizontalOptions="Center" 
                                MaximumHeightRequest="35">

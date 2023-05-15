@@ -2,13 +2,15 @@
 <ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
-             x:Class="MauppleMusic.Views.AlbumPlayingView">
+             x:Class="MauppleMusic.Views.AlbumPlayingView"
+             HeightRequest="85">
     
     <ContentView.Resources>
         <Style TargetType="Label">
             <Setter Property="VerticalOptions" Value="Center"/>
             <Setter Property="FontSize" Value="18"/>
             <Setter Property="LineBreakMode" Value="TailTruncation"/>
+            <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}"/>
         </Style>
         <Style TargetType="ImageButton">
             <Setter Property="VerticalOptions" Value="Center"/>
@@ -16,8 +18,9 @@
         </Style>
     </ContentView.Resources>
 
-    <Frame BackgroundColor="{AppThemeBinding Light={StaticResource Gray100}, Dark={StaticResource Gray600}}"
-           Padding="10" Opacity="0.9">
+    <Frame BackgroundColor="{AppThemeBinding Light={StaticResource LightBlue}, Dark={StaticResource Gray600}}"
+           CornerRadius="0"
+           Padding="10">
         <Grid ColumnSpacing="10">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
@@ -26,7 +29,7 @@
                 <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
 
-            <toolkit:AvatarView WidthRequest="75" HeightRequest="75"
+            <toolkit:AvatarView WidthRequest="65" HeightRequest="65"
                                 ImageSource="cover1.png"
                                 CornerRadius="10" Margin="5,0"/>
             <Label Grid.Column="1" 

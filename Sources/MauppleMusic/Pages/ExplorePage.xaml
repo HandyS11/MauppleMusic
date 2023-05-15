@@ -5,8 +5,6 @@
              x:Class="MauppleMusic.Pages.ExplorePage"
              Title="ExplorePage"
              Shell.NavBarIsVisible="False">
-    
-    <VerticalStackLayout>
-        <views:AlbumPlayingView/>
-    </VerticalStackLayout>
+
+    <views:AlbumPlayingView/>
 </ContentPage>

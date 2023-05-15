@@ -5,7 +5,4 @@
              x:Class="MauppleMusic.Pages.LibraryPage"
              Title="LibraryPage">
     
-    <VerticalStackLayout>
-        
-    </VerticalStackLayout>
 </ContentPage>

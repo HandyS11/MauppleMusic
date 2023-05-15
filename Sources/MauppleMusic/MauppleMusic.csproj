@@ -86,6 +86,9 @@
 	  <MauiXaml Update="Views\AlbumPlayingView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\AlbumView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Condition=" '$(EnableDefaultXamlItems)' == 'true' " Update="Views\AppShell.xaml">
 	    <SubType>Designer</SubType>
 	  </MauiXaml>
@@ -93,6 +96,12 @@
 	    <SubType>Designer</SubType>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\FakeButtonView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\SongItemView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\SongListView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
