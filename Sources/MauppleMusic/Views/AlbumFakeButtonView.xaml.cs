@@ -1,6 +1,6 @@
 namespace MauppleMusic.Views;
 
-public partial class FakeButtonView : ContentView
+public partial class AlbumFakeButtonView : ContentView
 {
 	private string _title;
 	public string Text
@@ -24,7 +24,7 @@ public partial class FakeButtonView : ContentView
         }
 	}
 
-	public FakeButtonView()
+	public AlbumFakeButtonView()
 	{
 		InitializeComponent();
     }

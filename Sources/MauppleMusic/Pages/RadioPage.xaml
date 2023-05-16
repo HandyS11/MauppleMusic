@@ -6,5 +6,4 @@
              Title="RadioPage"
              Shell.NavBarIsVisible="False">
 
-    <views:SongItemView Number="1" Title="The Eyes of the Tiger"/>
 </ContentPage>

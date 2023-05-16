@@ -2,8 +2,7 @@
 <ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
-             x:Class="MauppleMusic.Views.AlbumPlayingView"
-             HeightRequest="85">
+             x:Class="MauppleMusic.Views.AlbumPlayingView">
     
     <ContentView.Resources>
         <Style TargetType="Label">
@@ -18,35 +17,37 @@
         </Style>
     </ContentView.Resources>
 
-    <Frame BackgroundColor="{AppThemeBinding Light={StaticResource LightBlue}, Dark={StaticResource Gray600}}"
-           CornerRadius="0"
-           Padding="10">
-        <Grid ColumnSpacing="10">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition Width="Auto"/>
-            </Grid.ColumnDefinitions>
+    <Grid ColumnSpacing="10"
+          BackgroundColor="{AppThemeBinding Light={StaticResource LightBlue}, Dark={StaticResource Gray600}}"
+          Padding="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
 
-            <toolkit:AvatarView WidthRequest="65" HeightRequest="65"
-                                ImageSource="cover1.png"
-                                CornerRadius="10" Margin="5,0"/>
-            <Label Grid.Column="1" 
+        <Frame Margin="5,0"
+                   CornerRadius="10"
+                   WidthRequest="65" 
+                   HeightRequest="65">
+            <Image Source="cover1.png"
+                       Aspect="AspectFill"/>
+        </Frame>
+        <Label Grid.Column="1" 
                    Text="Playing song"/>
-            
-            <ImageButton Grid.Column="2" 
+
+        <ImageButton Grid.Column="2" 
                          Source="play.png">
-                <ImageButton.Behaviors>
-                    <toolkit:IconTintColorBehavior TintColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}"/>
-                </ImageButton.Behaviors>
-            </ImageButton>
-            <ImageButton Grid.Column="3" 
+            <ImageButton.Behaviors>
+                <toolkit:IconTintColorBehavior TintColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}"/>
+            </ImageButton.Behaviors>
+        </ImageButton>
+        <ImageButton Grid.Column="3" 
                          Source="fast_forward.png">
-                <ImageButton.Behaviors>
-                    <toolkit:IconTintColorBehavior TintColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}"/>
-                </ImageButton.Behaviors>
-            </ImageButton>
-        </Grid>
-    </Frame>
+            <ImageButton.Behaviors>
+                <toolkit:IconTintColorBehavior TintColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}"/>
+            </ImageButton.Behaviors>
+        </ImageButton>
+    </Grid>
 </ContentView>

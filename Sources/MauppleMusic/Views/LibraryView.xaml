@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:views="clr-namespace:MauppleMusic.Views"
+             xmlns:model="clr-namespace:Model;assembly=Model" 
+             x:DataType="model:Library"
+             x:Class="MauppleMusic.Views.LibraryView">
+
+    <Grid>
+        <ScrollView>
+            <VerticalStackLayout Margin="10">
+                <Label Text="Bibliothèque"
+                       Margin="5"
+                       Style="{StaticResource BigTitleLabel}"/>
+
+                <views:LibrarySectionView IconImage="queue_music.png" Name="Playlist"/>
+                <views:LibrarySectionView IconImage="mic.png" Name="Artistes"/>
+                <views:LibrarySectionView IconImage="library_book.png" Name="Albums"/>
+                <views:LibrarySectionView IconImage="library_music.png" Name="Compilations"/>
+
+                <Label Text="Ajouts récents"
+                       Margin="8,20,8,0"
+                       Style="{StaticResource BigSubTitleLabel}"/>
+
+                <CollectionView ItemsSource="{Binding Albums}"
+                                SelectionMode="None" 
+                                Margin="5,10,5,85">
+                    <CollectionView.ItemsLayout>
+                        <GridItemsLayout Orientation="Vertical" 
+                                         VerticalItemSpacing="10"
+                                         HorizontalItemSpacing="15"
+                                         Span="2" />
+                    </CollectionView.ItemsLayout>
+                    
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <views:LibraryAlbumCoverView/>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <views:AlbumPlayingView VerticalOptions="End"/>
+        <BoxView BackgroundColor="{StaticResource Gray600}"
+                 Opacity="0.3"
+                 VerticalOptions="End"
+                 HeightRequest="0.5" />
+    </Grid>
+</ContentView>

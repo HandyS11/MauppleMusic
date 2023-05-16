@@ -6,10 +6,4 @@
              Title="ListenPage"
              Shell.NavBarIsVisible="False">
 
-    <views:AlbumDetailView Image="cover1.png" 
-                           Title="The longest song title I ever test just in case it doesn't fill perfectly"
-                           Author="Some author wellknow"
-                           Theme="The theme"
-                           Year="198x"
-                           Quality="Lossless"/>
 </ContentPage>

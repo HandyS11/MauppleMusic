@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="MauppleMusic.Views.LibrarySectionView">
+
+    <VerticalStackLayout>
+        <Grid ColumnSpacing="5" HeightRequest="50">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.Resources>
+                <Style TargetType="Image">
+                    <Setter Property="Aspect" Value="AspectFit"/>
+                </Style>
+                <Style TargetType="Label">
+                    <Setter Property="FontSize" Value="20"/>
+                    <Setter Property="VerticalTextAlignment" Value="Center"/>
+                </Style>
+            </Grid.Resources>
+
+            <Image x:Name="iconImage" 
+                   Source="queue_music.png"
+                   Margin="8">
+                <Image.Behaviors>
+                    <toolkit:IconTintColorBehavior TintColor="{StaticResource Primary}"/>
+                </Image.Behaviors>
+            </Image>
+
+            <Label x:Name="sectionLabel" 
+                   Grid.Column="1"
+                   Text="Section"/>
+
+            <Image Grid.Column="2"
+                   Source="arrow_forward.png"
+                   Margin="15">
+                <Image.Behaviors>
+                    <toolkit:IconTintColorBehavior TintColor="{StaticResource Gray400}"/>
+                </Image.Behaviors>
+            </Image>
+        </Grid>
+        <BoxView BackgroundColor="{StaticResource Gray600}"
+                 Opacity="0.3"
+                 Margin="60,0,0,0"
+                 HeightRequest="0.3" />
+    </VerticalStackLayout>
+</ContentView>

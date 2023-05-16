@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:views="clr-namespace:MauppleMusic.Views"
              x:Class="MauppleMusic.Pages.LibraryPage"
-             Title="LibraryPage">
-    
+             Title="Bibliothèque">
+
+    <views:LibraryView/>
 </ContentPage>

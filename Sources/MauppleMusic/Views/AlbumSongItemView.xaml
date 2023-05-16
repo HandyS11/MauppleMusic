@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:model="clr-namespace:Model;assembly=Model" 
+             x:DataType="model:Song"
+             x:Class="MauppleMusic.Views.AlbumSongItemView">
+
+    <ContentView.Resources>
+        <toolkit:InvertedBoolConverter x:Key="invBool"/>
+    </ContentView.Resources>
+
+    <Grid ColumnSpacing="8"
+          Margin="0,0,8,0">
+        <Grid.Resources>
+            <Style TargetType="Image">
+                <Setter Property="Margin" Value="5,10"/>
+                <Setter Property="Aspect" Value="AspectFit"/>
+                <Setter Property="HeightRequest" Value="20"/>
+            </Style>
+            <Style TargetType="Label">
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="LineBreakMode" Value="TailTruncation"/>
+                <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}"/>
+            </Style>
+        </Grid.Resources>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="30"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <Image Source="star.png"
+               IsVisible="{Binding IsFavorite}">
+            <Image.Behaviors>
+                <toolkit:IconTintColorBehavior TintColor="{StaticResource Gray400}"/>
+            </Image.Behaviors>
+        </Image>
+        <Label Grid.Column="1"
+               Text="{Binding Id}"
+               Margin="0,0,5,0"
+               TextColor="{StaticResource Gray400}"/>
+        <Label Grid.Column="2"
+               Text="{Binding Name}"/>
+        <Image Grid.Column="3" 
+               IsVisible="{Binding IsDownload, Converter={StaticResource invBool}}"
+               Source="download.png"
+               Aspect="AspectFit">
+            <Image.Behaviors>
+                <toolkit:IconTintColorBehavior TintColor="{AppThemeBinding Light={StaticResource Gray400}, Dark={StaticResource Gray600}}"/>
+            </Image.Behaviors>
+        </Image>
+        <Image Grid.Column="4" 
+               Source="more_horiz.png"
+               Aspect="AspectFit">
+            <Image.Behaviors>
+                <toolkit:IconTintColorBehavior TintColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}"/>
+            </Image.Behaviors>
+        </Image>
+    </Grid>
+</ContentView>

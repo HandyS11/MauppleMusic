@@ -52,6 +52,7 @@
 	</ItemGroup>
 	<ItemGroup>
 	  <None Remove="Resources\Images\arrow_back_ios.svg" />
+	  <None Remove="Resources\Images\arrow_forward.svg" />
 	  <None Remove="Resources\Images\cell_tower.svg" />
 	  <None Remove="Resources\Images\done.svg" />
 	  <None Remove="Resources\Images\download.svg" />
@@ -67,7 +68,26 @@
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 		<PackageReference Include="CommunityToolkit.Maui" Version="5.1.0" />
 	</ItemGroup>
+
 	<ItemGroup>
+	  <ProjectReference Include="..\Model\Model.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="Views\AlbumFakeButtonView.xaml.cs">
+	    <DependentUpon>AlbumFakeButtonView.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\AlbumSongListView.xaml.cs">
+	    <DependentUpon>AlbumSongListView.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\AlbumSongItemView.xaml.cs">
+	    <DependentUpon>AlbumSongItemView.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+	<ItemGroup>
+	  <MauiXaml Update="Pages\AlbumPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Condition=" '$(EnableDefaultXamlItems)' == 'true' " Update="Pages\AppShell.xaml">
 	    <SubType>Designer</SubType>
 	  </MauiXaml>
@@ -79,6 +99,9 @@
 	  </MauiXaml>
 	  <MauiXaml Update="Resources\Styles\CustomStyles.xaml">
 	    <Generator></Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\AlbumDescriptionView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\AlbumDetailView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
@@ -95,14 +118,24 @@
 	  <MauiXaml Condition=" '$(EnableDefaultXamlItems)' == 'true' " Update="AppShell.xaml">
 	    <SubType>Designer</SubType>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\FakeButtonView.xaml">
+	  <MauiXaml Update="Views\AlbumFakeButtonView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\SongItemView.xaml">
+	  <MauiXaml Update="Views\LibraryAlbumCoverView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\SongListView.xaml">
+	  <MauiXaml Update="Views\LibrarySectionView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\LibraryView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\AlbumSongItemView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\AlbumSongListView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
+	<ProjectExtensions><VisualStudio><UserProperties XamarinHotReloadUnhandledDeviceExceptionMauppleMusicHideInfoBar="True" /></VisualStudio></ProjectExtensions>
 </Project>

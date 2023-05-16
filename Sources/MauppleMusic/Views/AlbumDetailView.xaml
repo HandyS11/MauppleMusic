@@ -2,22 +2,30 @@
 <ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:converter="clr-namespace:MauppleMusic.Converters"
+             xmlns:model="clr-namespace:Model;assembly=Model" 
+             x:DataType="model:Album"
              xmlns:views="clr-namespace:MauppleMusic.Views"
              x:Class="MauppleMusic.Views.AlbumDetailView">
 
+    <ContentView.Resources>
+        <converter:DateToYearConverter x:Key="DateToYear"/>
+    </ContentView.Resources>
+    
     <VerticalStackLayout HorizontalOptions="Center">
-        <toolkit:AvatarView x:Name="imageAvatarView" 
-                            Margin="75,10" 
-                            WidthRequest="250" 
-                            HeightRequest="250"
-                            ImageSource="cover1.png"
-                            CornerRadius="10"/>
-        <Label x:Name="titleLabel" 
-               Text="Album Title"
+        <Frame CornerRadius="10" 
+               Padding="0"
+               WidthRequest="250" 
+               HeightRequest="250"
+               Margin="75,10">
+            <Image Aspect="AspectFit"
+                   Source="{Binding Cover}"/>
+        </Frame>
+
+        <Label Text="{Binding Name}"
                Margin="20,0"
                Style="{StaticResource TitleLabel}"/>
-        <Label x:Name="authorLabel"
-               Text="Album Author"
+        <Label Text="{Binding Author}"
                Style="{StaticResource SubTiltleLabel}"/>
         
         <HorizontalStackLayout HorizontalOptions="Center"
@@ -29,35 +37,36 @@
                 </Style>
             </HorizontalStackLayout.Resources>
             
-            <Label x:Name="themeLabel" 
-                   Text="Theme"/>
+            <Label Text="{Binding Theme}"/>
             <Label Text="·"
                    Margin="5,0"/>
-            <Label x:Name="yearLabel" 
-                   Text="2000"/>
+            <Label Text="{Binding Date, Converter={StaticResource DateToYear}}"/>
             <Label Text="·"
                    Margin="5,0"/>
 
             <Image Source="genetics.png"
-                   Aspect="AspectFit" Margin="0,0,3,0"
+                   Aspect="AspectFit" 
+                   Margin="0,0,3,0"
                    MaximumHeightRequest="12">
                 <Image.Behaviors>
                     <toolkit:IconTintColorBehavior TintColor="{StaticResource Gray400}"/>
                 </Image.Behaviors>
             </Image>
-            <Label x:Name="qualityLabel"
-                   Text="Quality"/>
+            <Label Text="{Binding Quality}"/>
         </HorizontalStackLayout>
 
-        <Grid ColumnSpacing="20" Margin="20">
+        <Grid ColumnSpacing="20" 
+              Margin="20,10,20,25">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <views:FakeButtonView Text="Lecture" Image="play.png"/>
-            <views:FakeButtonView Grid.Column="1"
-                                  Text="Aléatoire" Image="shuffle.png"/>
+            <views:AlbumFakeButtonView Text="Lecture" 
+                                       Image="play.png"/>
+            <views:AlbumFakeButtonView Grid.Column="1"
+                                       Text="Aléatoire" 
+                                       Image="shuffle.png"/>
         </Grid>
     </VerticalStackLayout>
 </ContentView>
