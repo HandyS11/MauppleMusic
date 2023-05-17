@@ -50,20 +50,6 @@
 		<!-- Raw Assets (also remove the "Resources\Raw" prefix) -->
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
 	</ItemGroup>
-	<ItemGroup>
-	  <None Remove="Resources\Images\arrow_back_ios.svg" />
-	  <None Remove="Resources\Images\arrow_forward.svg" />
-	  <None Remove="Resources\Images\cell_tower.svg" />
-	  <None Remove="Resources\Images\done.svg" />
-	  <None Remove="Resources\Images\download.svg" />
-	  <None Remove="Resources\Images\genetics.svg" />
-	  <None Remove="Resources\Images\library_book.svg" />
-	  <None Remove="Resources\Images\mic.svg" />
-	  <None Remove="Resources\Images\more_horiz.svg" />
-	  <None Remove="Resources\Images\shuffle.svg" />
-	  <None Remove="Resources\Images\star.svg" />
-	  <None Remove="CommunityToolkit.Maui.Core" />
-	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />

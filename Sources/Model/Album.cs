@@ -8,6 +8,7 @@
         public string Theme { get; set; }
         public string Quality { get; set; }
         public DateTime Date { get; set; }
+        public bool IsCopyright { get; set; }
         public string CopyrightYear { get; set; }
         public string CopyrightName { get; set; }
 
