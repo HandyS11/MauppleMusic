@@ -2,8 +2,11 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:views="clr-namespace:MauppleMusic.Views"
-             x:Class="MauppleMusic.Pages.LibraryPage"
-             Title="Bibliothèque">
+             x:Class="MauppleMusic.Pages.LibraryPage">
 
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Modifier"/>
+    </ContentPage.ToolbarItems>
+    
     <views:LibraryView/>
 </ContentPage>

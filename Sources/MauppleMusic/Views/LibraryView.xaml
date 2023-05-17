@@ -19,7 +19,7 @@
                 <views:LibrarySectionView IconImage="library_music.png" Name="Compilations"/>
 
                 <Label Text="Ajouts récents"
-                       Margin="8,20,8,0"
+                       Margin="8,20,8,5"
                        Style="{StaticResource BigSubTitleLabel}"/>
 
                 <CollectionView ItemsSource="{Binding Albums}"

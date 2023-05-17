@@ -18,7 +18,7 @@
     </ContentView.Resources>
 
     <Grid ColumnSpacing="10"
-          BackgroundColor="{AppThemeBinding Light={StaticResource LightBlue}, Dark={StaticResource Gray600}}"
+          BackgroundColor="{AppThemeBinding Light={StaticResource LightBlue}, Dark={StaticResource Gray900}}"
           Padding="10">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>

@@ -2,7 +2,15 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:views="clr-namespace:MauppleMusic.Views"
-             x:Class="MauppleMusic.Pages.AlbumPage">
+             xmlns:model="clr-namespace:Model;assembly=Model" 
+             x:DataType="model:Album"
+             x:Class="MauppleMusic.Pages.AlbumPage"
+             Title="{Binding Name}">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="done.png" />
+        <ToolbarItem IconImageSource="more_horiz.png"/>
+    </ContentPage.ToolbarItems>
 
     <views:AlbumView/>
 </ContentPage>

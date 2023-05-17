@@ -23,7 +23,7 @@
     </Style>
 
     <Style TargetType="Label" x:Key="BigSubTitleLabel">
-        <Setter Property="FontSize" Value="26"/>
+        <Setter Property="FontSize" Value="24"/>
         <Setter Property="FontAttributes" Value="Bold"/>
     </Style>
 

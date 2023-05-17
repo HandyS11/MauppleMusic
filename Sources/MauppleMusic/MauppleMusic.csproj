@@ -112,6 +112,9 @@
 	  <MauiXaml Update="Views\LibraryAlbumCoverView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\LibraryFakeNavigationBarView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\LibrarySectionView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

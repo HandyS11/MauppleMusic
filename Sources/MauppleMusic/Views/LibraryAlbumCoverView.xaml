@@ -21,6 +21,7 @@
                Margin="0,3,0,0"
                FontSize="18"/>
         <Label Text="{Binding Author}"
+               LineBreakMode="TailTruncation"
                FontSize="17"
                TextColor="{StaticResource Gray300}"/>
     </VerticalStackLayout>
