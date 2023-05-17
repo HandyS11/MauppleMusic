@@ -23,5 +23,6 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+        
     </VerticalStackLayout>
 </ContentView>

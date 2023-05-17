@@ -6,5 +6,4 @@
              Title="SearchPage"
              Shell.NavBarIsVisible="False">
 
-    <views:AlbumView/>
 </ContentPage>

@@ -33,7 +33,7 @@
                 new Album()
                 {
                     Cover = "cover2.png",
-                    Name = "Know What I Mean? (Remastered)s",
+                    Name = "Know What I Mean? (Remastered)",
                     Author = "Cannonball Adderley & Bill Evans",
                     Theme = "Jazz",
                     Quality = "Lossless",
@@ -84,7 +84,7 @@
                 new Album()
                 {
                     Cover = "cover4.png",
-                    Name = "Ditches Brew",
+                    Name = "Bitches Brew",
                     Author = "Miles Davis",
                     Theme = "Jazz",
                     Quality = "Lossless",
@@ -116,7 +116,7 @@
                     CopyrightName = "The Blue Note Label Group",
                     Songs = new List<Song>()
                     {
-                        new Song(1, "Search for the New Land", 2.30, true, false),
+                        new Song(1, "Search for the New Land", 2.30, false, false),
                         new Song(2, "The Joker", 2.30, false, false),
                         new Song(3, "Mr. Kenyatta", 2.30, true, false),
                         new Song(4, "Melancholee", 2.30, false, false),
@@ -128,20 +128,23 @@
                     Cover = "cover6.png",
                     Name = "Chroniques bluesymentales",
                     Author = "Hubert-Félix Thiéfaine",
-                    Theme = "",
-                    Quality = "",
-                    Date = new DateTime(2000, 01, 01),
-                    CopyrightYear = "",
-                    CopyrightName = "",
+                    Theme = "French Pop",
+                    Quality = "Lossless",
+                    Date = new DateTime(1990, 10, 13),
+                    IsCopyright = true,
+                    CopyrightYear = "1990",
+                    CopyrightName = "Sony Music Entertainment (France) S.A.",
                     Songs = new List<Song>()
                     {
-                        new Song(1, "A", 2.30, true, false),
-                        new Song(2, "B", 2.30, false, false),
-                        new Song(3, "C", 2.30, false, false),
-                        new Song(4, "D", 2.30, false, false),
-                        new Song(5, "E", 2.30, false, false),
-                        new Song(6, "F", 2.30, false, false),
-                        new Song(7, "G", 2.30, false, false),
+                        new Song(1, "Deamin les kids", 2.30, true, false),
+                        new Song(2, "Pogosur la deadline", 2.30, false, false),
+                        new Song(3, "Auautomne à tanger (Ant...)", 2.30, false, false),
+                        new Song(4, "Caméra terminues", 2.30, false, false),
+                        new Song(5, "542 lunes et 7 jours environ", 2.30, true, false),
+                        new Song(6, "Zoo zumains zébus", 2.30, false, false),
+                        new Song(7, "Portrait de femme en 1992", 2.30, false, false),
+                        new Song(8, "Misty Dog in Love", 2.30, false, false),
+                        new Song(9, "Villes natales et frenchitude", 2.30, false, false),
                     }
                 },
                 new Album()
