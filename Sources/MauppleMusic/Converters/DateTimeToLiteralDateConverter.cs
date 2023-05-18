@@ -11,7 +11,6 @@ namespace MauppleMusic.Converters
                 string formattedDate = dateTime.ToString("dd MMMM yyyy", culture);
                 return formattedDate;
             }
-
             return value;
         }
 
