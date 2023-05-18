@@ -6,4 +6,5 @@
              Title="SearchPage"
              Shell.NavBarIsVisible="False">
 
+    <views:EmptyPageView/>
 </ContentPage>

@@ -7,10 +7,13 @@
              x:Class="MauppleMusic.Views.LibraryView">
 
     <Grid>
-        <ScrollView>
+        <views:LibraryFakeNavigationBarView VerticalOptions="Start"/>
+
+        <ScrollView Margin="0,60,0,70"
+                    Scrolled="ScrollView_Scrolled">
             <VerticalStackLayout Margin="10,0,10,10">
                 <Label Text="Bibliothèque"
-                       Margin="5"
+                       Margin="5,0"
                        Style="{StaticResource BigTitleLabel}"/>
 
                 <views:LibrarySectionView IconImage="queue_music.png" Name="Playlist"/>
@@ -24,7 +27,7 @@
 
                 <CollectionView ItemsSource="{Binding Albums}"
                                 SelectionMode="None"
-                                Margin="5,10,5,85">
+                                Margin="5,10">
                     <CollectionView.ItemsLayout>
                         <GridItemsLayout Orientation="Vertical" 
                                          VerticalItemSpacing="10"
@@ -41,10 +44,11 @@
             </VerticalStackLayout>
         </ScrollView>
 
-        <views:AlbumPlayingView VerticalOptions="End"/>
-        <BoxView BackgroundColor="{StaticResource Gray600}"
+        <VerticalStackLayout VerticalOptions="End">
+            <views:AlbumPlayingView/>
+            <BoxView BackgroundColor="{StaticResource Gray600}"
                  Opacity="0.3"
-                 VerticalOptions="End"
                  HeightRequest="0.5" />
+        </VerticalStackLayout>
     </Grid>
 </ContentView>

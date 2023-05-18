@@ -30,13 +30,13 @@
         <Frame Margin="5,0"
                Padding="0"
                CornerRadius="10"
-               WidthRequest="65" 
-               HeightRequest="65">
-            <Image Source="cover1.png"
+               WidthRequest="60" 
+               HeightRequest="60">
+            <Image Source="cover3.png"
                        Aspect="AspectFill"/>
         </Frame>
         <Label Grid.Column="1" 
-                   Text="Playing song"/>
+               Text="Tide of Hyacinth"/>
 
         <ImageButton Grid.Column="2" 
                          Source="play.png">

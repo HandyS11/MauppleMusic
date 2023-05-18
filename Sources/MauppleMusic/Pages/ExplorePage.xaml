@@ -6,4 +6,5 @@
              Title="ExplorePage"
              Shell.NavBarIsVisible="False">
 
+    <views:EmptyPageView/>
 </ContentPage>

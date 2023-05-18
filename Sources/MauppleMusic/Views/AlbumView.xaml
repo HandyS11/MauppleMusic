@@ -6,17 +6,18 @@
 
     <Grid>
         <ScrollView>
-            <VerticalStackLayout Margin="0,0,0,100">
+            <VerticalStackLayout Margin="0,0,0,90">
                 <views:AlbumDetailView/>
                 <views:AlbumSongListView/>
                 <views:AlbumDescriptionView Margin="20,15,20,0"/>
             </VerticalStackLayout>
         </ScrollView>
 
-        <views:AlbumPlayingView VerticalOptions="End"/>
-        <BoxView BackgroundColor="{StaticResource Gray600}"
-                 Opacity="0.3"
-                 VerticalOptions="End"
-                 HeightRequest="0.5" />
+        <VerticalStackLayout VerticalOptions="End">
+            <views:AlbumPlayingView />
+            <BoxView BackgroundColor="{StaticResource Gray600}"
+                     Opacity="0.3"
+                     HeightRequest="0.5" />
+        </VerticalStackLayout>
     </Grid>
 </ContentView>

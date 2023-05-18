@@ -109,6 +109,9 @@
 	  <MauiXaml Update="Views\AlbumFakeButtonView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\EmptyPageView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\LibraryAlbumCoverView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

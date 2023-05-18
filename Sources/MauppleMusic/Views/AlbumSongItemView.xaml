@@ -51,7 +51,7 @@
                Source="download.png"
                Aspect="AspectFit">
             <Image.Behaviors>
-                <toolkit:IconTintColorBehavior TintColor="{AppThemeBinding Light={StaticResource Gray400}, Dark={StaticResource Gray600}}"/>
+                <toolkit:IconTintColorBehavior TintColor="{StaticResource Gray400}"/>
             </Image.Behaviors>
         </Image>
         <Image Grid.Column="4" 

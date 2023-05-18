@@ -1,7 +1,4 @@
-﻿using static System.Runtime.InteropServices.JavaScript.JSType;
-using System.Xml.Linq;
-
-namespace Model
+﻿namespace Model
 {
     public class Stub
     {
@@ -162,17 +159,17 @@ namespace Model
                     Songs = new List<Song>()
                     {
                         new Song(1, "Wake", new TimeSpan(0, 1, 41), false, false),
-                        new Song(2, "Given Up", new TimeSpan(0, 3, 9), true, false),
-                        new Song(3, "Leave Out All the Rest", new TimeSpan(0, 3, 29), false, false),
-                        new Song(4, "Bleed It Out", new TimeSpan(0, 2, 44), false, false),
-                        new Song(5, "Shadow of the Day", new TimeSpan(0, 4, 50), false, false),
+                        new Song(2, "Given Up", new TimeSpan(0, 3, 9), true, true),
+                        new Song(3, "Leave Out All the Rest", new TimeSpan(0, 3, 29), false, true),
+                        new Song(4, "Bleed It Out", new TimeSpan(0, 2, 44), true, true),
+                        new Song(5, "Shadow of the Day", new TimeSpan(0, 4, 50), true, true),
                         new Song(6, "What I\'ve Done", new TimeSpan(0, 3, 26), true, true),
-                        new Song(7, "Hands Held High", new TimeSpan(0, 3, 53), false, false),
-                        new Song(8, "No More Sorrow", new TimeSpan(0, 3, 42), false, false),
-                        new Song(9, "Valentine\'s Day", new TimeSpan(0, 3, 17), false, false),
-                        new Song(10, "In Between", new TimeSpan(0, 3, 17), false, false),
-                        new Song(11, "In Pieces", new TimeSpan(0, 3, 38), false, false),
-                        new Song(12, "The Little Things You Give you Away", new TimeSpan(0, 6, 24), false, false), 
+                        new Song(7, "Hands Held High", new TimeSpan(0, 3, 53), false, true),
+                        new Song(8, "No More Sorrow", new TimeSpan(0, 3, 42), true, true),
+                        new Song(9, "Valentine\'s Day", new TimeSpan(0, 3, 17), true, true),
+                        new Song(10, "In Between", new TimeSpan(0, 3, 17), false, true),
+                        new Song(11, "In Pieces", new TimeSpan(0, 3, 38), true, true),
+                        new Song(12, "The Little Things You Give you Away", new TimeSpan(0, 6, 24), false, true), 
                     }
                 }
             };

@@ -3,10 +3,24 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauppleMusic.Views.LibraryFakeNavigationBarView">
 
-    <Grid>
-        <Label Text="Bibliothèque"
-               HorizontalOptions="Center"/>
-        <Label Text="Modifier"
-               HorizontalOptions="End"/>
-    </Grid>
+    <VerticalStackLayout>
+        <Grid HeightRequest="50" 
+              Padding="20,0"
+              BackgroundColor="Transparent">
+            <Label Text="Bibliothèque"
+                   IsVisible="false"
+                   FontAttributes="Bold"
+                   FontSize="18"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"/>
+            <Label Text="Modifier"
+                   TextColor="{StaticResource Primary}"
+                   VerticalOptions="Center"
+                   HorizontalOptions="End"/>
+        </Grid>
+        <BoxView IsVisible="false" 
+                 BackgroundColor="{StaticResource Gray600}"
+                 Opacity="0.3"
+                 HeightRequest="0.5" />
+    </VerticalStackLayout>
 </ContentView>

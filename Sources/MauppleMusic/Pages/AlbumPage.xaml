@@ -5,12 +5,13 @@
              xmlns:model="clr-namespace:Model;assembly=Model" 
              x:DataType="model:Album"
              x:Class="MauppleMusic.Pages.AlbumPage"
-             Title="{Binding Name}">
+             Title="{Binding Name}"
+             Shell.NavBarIsVisible="False">
 
-    <ContentPage.ToolbarItems>
+    <!--<ContentPage.ToolbarItems>
         <ToolbarItem IconImageSource="done.png" />
         <ToolbarItem IconImageSource="more_horiz.png"/>
-    </ContentPage.ToolbarItems>
+    </ContentPage.ToolbarItems>-->
 
     <views:AlbumView/>
 </ContentPage>

@@ -6,4 +6,5 @@
              Title="RadioPage"
              Shell.NavBarIsVisible="False">
 
+    <views:EmptyPageView/>
 </ContentPage>
