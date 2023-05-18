@@ -7,10 +7,6 @@
              x:DataType="model:Album"
              xmlns:views="clr-namespace:MauppleMusic.Views"
              x:Class="MauppleMusic.Views.AlbumDetailView">
-
-    <ContentView.Resources>
-        <converter:DateToYearConverter x:Key="DateToYear"/>
-    </ContentView.Resources>
     
     <VerticalStackLayout HorizontalOptions="Center">
         <Frame CornerRadius="10" 
@@ -40,7 +36,7 @@
             <Label Text="{Binding Theme}"/>
             <Label Text="·"
                    Margin="5,0"/>
-            <Label Text="{Binding Date, Converter={StaticResource DateToYear}}"/>
+            <Label Text="{Binding Date.Year}"/>
             <Label Text="·"
                    Margin="5,0"/>
 
