@@ -5,19 +5,17 @@
              x:Class="MauppleMusic.Views.AlbumView">
 
     <Grid>
-        <ScrollView>
-            <VerticalStackLayout Margin="0,0,0,90">
+        <views:AlbumFakeNavigationBarView VerticalOptions="Start"/>
+
+        <ScrollView Margin="0,50,0,80"
+                    Scrolled="ScrollView_Scrolled">
+            <VerticalStackLayout>
                 <views:AlbumDetailView/>
                 <views:AlbumSongListView/>
-                <views:AlbumDescriptionView Margin="20,15,20,0"/>
+                <views:AlbumDescriptionView Margin="20,15"/>
             </VerticalStackLayout>
         </ScrollView>
 
-        <VerticalStackLayout VerticalOptions="End">
-            <views:AlbumPlayingView />
-            <BoxView BackgroundColor="{StaticResource Gray600}"
-                     Opacity="0.3"
-                     HeightRequest="0.5" />
-        </VerticalStackLayout>
+        <views:AlbumPlayingView VerticalOptions="End"/>
     </Grid>
 </ContentView>

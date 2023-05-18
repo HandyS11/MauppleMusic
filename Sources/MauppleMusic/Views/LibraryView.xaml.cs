@@ -4,7 +4,7 @@ namespace MauppleMusic.Views;
 
 public partial class LibraryView : ContentView
 {
-    private const int MaxY = 100;
+    private const int MaxY = 60;
 
 	public LibraryView()
 	{
@@ -57,6 +57,6 @@ public partial class LibraryView : ContentView
     {
         VerticalStackLayout stackLayout = (((obj as ScrollView).Parent as Grid).Children.First() as ContentView).Children.First() as VerticalStackLayout;
         ((stackLayout.Children.First() as Grid).Children.First() as Label).IsVisible = show;
-        (stackLayout.Children.Last() as BoxView).IsVisible = show;
+        (stackLayout.Children.Last() as SeparatorBoxView).IsVisible = show;
     }
 }

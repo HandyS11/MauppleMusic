@@ -9,7 +9,7 @@
     <Grid>
         <views:LibraryFakeNavigationBarView VerticalOptions="Start"/>
 
-        <ScrollView Margin="0,60,0,70"
+        <ScrollView Margin="0,51,0,70"
                     Scrolled="ScrollView_Scrolled">
             <VerticalStackLayout Margin="10,0,10,10">
                 <Label Text="Bibliothèque"
@@ -44,11 +44,6 @@
             </VerticalStackLayout>
         </ScrollView>
 
-        <VerticalStackLayout VerticalOptions="End">
-            <views:AlbumPlayingView/>
-            <BoxView BackgroundColor="{StaticResource Gray600}"
-                 Opacity="0.3"
-                 HeightRequest="0.5" />
-        </VerticalStackLayout>
+        <views:AlbumPlayingView VerticalOptions="End"/>
     </Grid>
 </ContentView>

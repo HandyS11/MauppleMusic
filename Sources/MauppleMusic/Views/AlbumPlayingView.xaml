@@ -2,6 +2,7 @@
 <ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:views="clr-namespace:MauppleMusic.Views"
              x:Class="MauppleMusic.Views.AlbumPlayingView">
     
     <ContentView.Resources>
@@ -17,38 +18,41 @@
         </Style>
     </ContentView.Resources>
 
-    <Grid ColumnSpacing="10"
-          BackgroundColor="{AppThemeBinding Light={StaticResource LightBlue}, Dark={StaticResource Gray900}}"
-          Padding="10">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="Auto"/>
-        </Grid.ColumnDefinitions>
+    <VerticalStackLayout>
+        <Grid ColumnSpacing="10"
+              BackgroundColor="{AppThemeBinding Light={StaticResource LightBlue}, Dark={StaticResource Gray600}}"
+              Padding="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
 
-        <Frame Margin="5,0"
-               Padding="0"
-               CornerRadius="10"
-               WidthRequest="60" 
-               HeightRequest="60">
-            <Image Source="cover3.png"
+            <Frame Margin="5,0"
+                   Padding="0"
+                   CornerRadius="10"
+                   WidthRequest="60" 
+                   HeightRequest="60">
+                <Image Source="cover3.png"
                        Aspect="AspectFill"/>
-        </Frame>
-        <Label Grid.Column="1" 
-               Text="Tide of Hyacinth"/>
+            </Frame>
+            <Label Grid.Column="1" 
+                   Text="Tide of Hyacinth"/>
 
-        <ImageButton Grid.Column="2" 
+            <ImageButton Grid.Column="2" 
                          Source="play.png">
-            <ImageButton.Behaviors>
-                <toolkit:IconTintColorBehavior TintColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}"/>
-            </ImageButton.Behaviors>
-        </ImageButton>
-        <ImageButton Grid.Column="3" 
+                <ImageButton.Behaviors>
+                    <toolkit:IconTintColorBehavior TintColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}"/>
+                </ImageButton.Behaviors>
+            </ImageButton>
+            <ImageButton Grid.Column="3" 
                          Source="fast_forward.png">
-            <ImageButton.Behaviors>
-                <toolkit:IconTintColorBehavior TintColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}"/>
-            </ImageButton.Behaviors>
-        </ImageButton>
-    </Grid>
+                <ImageButton.Behaviors>
+                    <toolkit:IconTintColorBehavior TintColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}"/>
+                </ImageButton.Behaviors>
+            </ImageButton>
+        </Grid>
+        <views:SeparatorBoxView/>
+    </VerticalStackLayout>
 </ContentView>
