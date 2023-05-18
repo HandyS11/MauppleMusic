@@ -4,11 +4,11 @@
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public double Duration { get; set; }
+        public TimeSpan Duration { get; set; }
         public bool IsFavorite { get; set; }
         public bool IsDownload { get; set; }
 
-        public Song(int id, string name, double duration, bool isFavorite, bool isDownload)
+        public Song(int id, string name, TimeSpan duration, bool isFavorite, bool isDownload)
         {
             Id = id;
             Name = name;
@@ -16,7 +16,5 @@
             IsFavorite = isFavorite;
             IsDownload = isDownload;
         }
-
-        public Song() { }
     }
 }

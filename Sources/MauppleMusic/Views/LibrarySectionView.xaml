@@ -19,6 +19,7 @@
                 <Style TargetType="Label">
                     <Setter Property="FontSize" Value="20"/>
                     <Setter Property="VerticalTextAlignment" Value="Center"/>
+                    <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}"/>
                 </Style>
             </Grid.Resources>
 

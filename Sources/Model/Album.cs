@@ -30,16 +30,11 @@
             {
                 if (Songs == null)
                     return 0;
-                double duration = 0;
-                foreach (Song song in Songs)
-                {
-                    duration += song.Duration;
-                }
-                return Convert.ToInt32(duration);
+                return Convert.ToInt32(Songs.Select(s => s.Duration.Minutes).Sum());
             }
         }
 
-        public Album(string cover, string name, string author, string theme, string quality, DateTime date, string copyrightYear, string copyrightName, List<Song> songs)
+        public Album(string cover, string name, string author, string theme, string quality, DateTime date, bool isCopyright, string copyrightYear, string copyrightName, List<Song> songs)
         {
             Cover = cover;
             Name = name;
@@ -47,6 +42,7 @@
             Theme = theme;
             Quality = quality;
             Date = date;
+            IsCopyright = isCopyright;
             CopyrightYear = copyrightYear;
             CopyrightName = copyrightName;
             Songs = songs;
