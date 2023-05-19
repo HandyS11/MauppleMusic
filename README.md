@@ -18,7 +18,7 @@ Reproduce the **Library** tab of the [AppleMusic](https://www.apple.com/fr/apple
 | <img src="./Documentation/screens/Library1-Light.PNG" height="750"/> | <img src="./Documentation/screens/MyLibrary1-Light.jpg" height="750"/> |
 | <img src="./Documentation/screens/Library2-Light.PNG" height="750"/> | <img src="./Documentation/screens/MyLibrary2-Light.jpg" height="750"/> |
 | <img src="./Documentation/screens/Library1-Dark.PNG" height="750"/> | <img src="./Documentation/screens/MyLibrary1-Dark.jpg" height="750"/> |
-| <img src="./Documentation/screens/Library2-Dark.PNG" height="750"/> | <img src="./Documentation/screens/MyLibrary1-Dark.jpg" height="750"/> |
+| <img src="./Documentation/screens/Library2-Dark.PNG" height="750"/> | <img src="./Documentation/screens/MyLibrary2-Dark.jpg" height="750"/> |
 | <img src="./Documentation/screens/Album1p1-Light.PNG" height="750"/> | <img src="./Documentation/screens/MyAlbum1p1-Light.jpg" height="750"/> |
 | <img src="./Documentation/screens/Album1p2-Light.PNG" height="750"/> | <img src="./Documentation/screens/MyAlbum1p2-Light.jpg" height="750"/> |
 | <img src="./Documentation/screens/Album1p1-Dark.PNG" height="750"/> | <img src="./Documentation/screens/MyAlbum1p1-Dark.jpg" height="750"/> |
