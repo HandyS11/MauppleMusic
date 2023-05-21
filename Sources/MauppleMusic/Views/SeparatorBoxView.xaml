@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauppleMusic.Views.SeparatorBoxView">
 
-    <BoxView BackgroundColor="{AppThemeBinding Light={StaticResource Gray200}, Dark={StaticResource Gray900}}"
+    <BoxView BackgroundColor="{AppThemeBinding Light={StaticResource Gray200}, Dark={StaticResource Gray600}}"
              Opacity="0.3"
              HeightRequest="0.5" />
 </ContentView>

@@ -58,5 +58,33 @@ public partial class LibraryView : ContentView
         VerticalStackLayout stackLayout = (((obj as ScrollView).Parent as Grid).Children.First() as ContentView).Children.First() as VerticalStackLayout;
         ((stackLayout.Children.First() as Grid).Children.First() as Label).IsVisible = show;
         (stackLayout.Children.Last() as SeparatorBoxView).IsVisible = show;
+
+        if (show)
+        {
+            if (Application.Current.RequestedTheme == AppTheme.Dark)
+            {
+                SetColor(stackLayout, "#404040");
+            }
+            else
+            {
+                SetColor(stackLayout, "#F1F1F1");
+            }
+        }
+        else
+        {
+            if (Application.Current.RequestedTheme == AppTheme.Dark)
+            {
+                SetColor(stackLayout, "#000000");
+            }
+            else
+            {
+                SetColor(stackLayout, "#FFFFFF");  
+            }
+        }    
+    }
+
+    private void SetColor(VerticalStackLayout obj, string color)
+    {
+        (obj.Children.First() as Grid).BackgroundColor = Color.FromRgba(color);
     }
 }

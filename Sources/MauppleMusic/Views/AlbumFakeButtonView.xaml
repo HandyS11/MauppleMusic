@@ -17,6 +17,10 @@
         </Style>
     </ContentView.Resources>
 
+    <!--<Button BackgroundColor="{AppThemeBinding Light={StaticResource LightBlue}, Dark={StaticResource Gray600}}" 
+            Text="Something" 
+            ImageSource="star.png"/>-->
+
     <Frame BackgroundColor="{AppThemeBinding Light={StaticResource LightBlue}, Dark={StaticResource Gray600}}" 
            Padding="8">
         <HorizontalStackLayout HorizontalOptions="Center" 

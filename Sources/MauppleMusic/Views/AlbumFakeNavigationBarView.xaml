@@ -38,7 +38,7 @@
                    VerticalTextAlignment="Center"/>
 
             <Frame Grid.Column="2"
-                   BackgroundColor="{AppThemeBinding Light={StaticResource Gray200}, Dark={StaticResource Gray600}}"
+                   BackgroundColor="{AppThemeBinding Light={StaticResource Gray100}, Dark={StaticResource Gray900}}"
                    CornerRadius="100"
                    WidthRequest="30"
                    HeightRequest="30"
@@ -51,7 +51,7 @@
             </Frame>
 
             <Frame Grid.Column="3"
-                   BackgroundColor="{AppThemeBinding Light={StaticResource Gray200}, Dark={StaticResource Gray600}}"
+                   BackgroundColor="{AppThemeBinding Light={StaticResource Gray100}, Dark={StaticResource Gray900}}"
                    CornerRadius="100"
                    WidthRequest="30"
                    HeightRequest="30"

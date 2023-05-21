@@ -37,7 +37,7 @@
 
             <Image Grid.Column="2"
                    Source="arrow_forward.png"
-                   Margin="15">
+                   Margin="15,15,25,15">
                 <Image.Behaviors>
                     <toolkit:IconTintColorBehavior TintColor="{StaticResource Gray400}"/>
                 </Image.Behaviors>
