@@ -9,7 +9,9 @@
     <Color x:Key="Tertiary">#f92c60</Color>
 
     <Color x:Key="LightBlue">#F1F1F1</Color>
-    
+
+    <Color x:Key="Transparent">#00FFFFFF</Color>
+
     <Color x:Key="White">White</Color>
     <Color x:Key="Black">Black</Color>
     

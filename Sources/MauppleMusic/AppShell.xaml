@@ -8,7 +8,7 @@
     Shell.FlyoutBehavior="Disabled">
     
     <Shell.Behaviors>
-        <toolkit:StatusBarBehavior StatusBarColor="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Black}}"/>
+        <toolkit:StatusBarBehavior StatusBarColor="{AppThemeBinding Light={StaticResource Transparent}, Dark={StaticResource Black}}"/>
     </Shell.Behaviors>
 
     <TabBar>
