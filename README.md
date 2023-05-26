@@ -2,15 +2,21 @@
 
 ## 📝 Purpose
 
-Copy/paste the *Library* tab of the [AppleMusic](https://www.apple.com/fr/apple-music/) app with [**MAUI**](https://learn.microsoft.com/en-us/dotnet/maui).
+Copy/paste the *Library* tab of the [AppleMusic](https://www.apple.com/fr/apple-music/) app using [**MAUI**](https://learn.microsoft.com/en-us/dotnet/maui).
 
-    - Available on Android & IOS
-    - Only work on view (no model/databiding)
-    - Use theme (light/dark)
+- Available on Android & IOS
+- Only work on view (no model/databiding)
+- Use theme (light/dark)
 
 ## 🛠 Languages & tools
 
 ![skills](https://skillicons.dev/icons?i=cs,dotnet,visualstudio)           
+
+## 🖊️ Versions 
+
+- [.NET 7](https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-7)
+- [Android API](https://developer.android.com/reference) 33 *(tested)*
+- [iOS](https://www.apple.com/ios) 16 *(tested)*
 
 ## 📍 Visuals
 
@@ -40,7 +46,32 @@ Copy/paste the *Library* tab of the [AppleMusic](https://www.apple.com/fr/apple-
 | <img src="./Documentation/screens/Album2p1-Dark.PNG" height="750"/> | <img src="./Documentation/screens/MyAlbum2p1-Dark.jpg" height="750"/> |
 | <img src="./Documentation/screens/Album2p2-Dark.PNG" height="750"/> | <img src="./Documentation/screens/MyAlbum2p2-Dark.jpg" height="750"/> |
 </details>
-          
+
+## ⚙️ Known limitations
+
+Due to its youngness *(and ~~maybe~~ certainly because of my lack of knowledge)* the **CollectionView** seems to have some bugs with iOS such as:
+
+- Have it's own **ScrollView** went placed in a component that already own one.
+- Wrongly displays the first items when using the **GridItemsLayout**.
+
+> Here is an exemple of code that gave this issue based on the [**MAUI**](https://learn.microsoft.com/en-us/dotnet/maui) project version.
+
+```cs
+<CollectionView ItemsSource="{Binding SomeCollection}"
+                SelectionMode="None">
+    <CollectionView.ItemsLayout>
+        <GridItemsLayout Orientation="Vertical" 
+                         Span="2" />
+    </CollectionView.ItemsLayout>
+                    
+    <CollectionView.ItemTemplate>
+        <DataTemplate>
+            <SomeComponent/>
+        </DataTemplate>
+    </CollectionView.ItemTemplate>
+</CollectionView>
+```
+   
 ## ✍️ Credits 
 
 * Author: [**Valetin Clergue**](https://github.com/HandyS11)
