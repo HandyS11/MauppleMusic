@@ -18,7 +18,7 @@ Copy/paste the **Library** tab of the [AppleMusic](https://www.apple.com/fr/appl
 > It might be some differences with the Clone-App that belongs on an Android.
 
 
-<details><summary> Albums </sumary>
+<details><summary> Library section </summary>
 
 | AppleMusic | MauppleMusic |
 | --- | --- |
@@ -26,10 +26,9 @@ Copy/paste the **Library** tab of the [AppleMusic](https://www.apple.com/fr/appl
 | <img src="./Documentation/screens/Library2-Light.PNG" height="750"/> | <img src="./Documentation/screens/MyLibrary2-Light.jpg" height="750"/> |
 | <img src="./Documentation/screens/Library1-Dark.PNG" height="750"/> | <img src="./Documentation/screens/MyLibrary1-Dark.jpg" height="750"/> |
 | <img src="./Documentation/screens/Library2-Dark.PNG" height="750"/> | <img src="./Documentation/screens/MyLibrary2-Dark.jpg" height="750"/> |
-
 </details>
 
-<details><summary> Albums </sumary>
+<details><summary> Albums section </summary>
 
 | AppleMusic | MauppleMusic |
 | --- | --- |
@@ -41,7 +40,6 @@ Copy/paste the **Library** tab of the [AppleMusic](https://www.apple.com/fr/appl
 | <img src="./Documentation/screens/Album2p2-Light.PNG" height="750"/> | <img src="./Documentation/screens/MyAlbum2p2-Light.jpg" height="750"/> |
 | <img src="./Documentation/screens/Album2p1-Dark.PNG" height="750"/> | <img src="./Documentation/screens/MyAlbum2p1-Dark.jpg" height="750"/> |
 | <img src="./Documentation/screens/Album2p2-Dark.PNG" height="750"/> | <img src="./Documentation/screens/MyAlbum2p2-Dark.jpg" height="750"/> |
-
 </details>
           
 ## ✍️ Credits 
