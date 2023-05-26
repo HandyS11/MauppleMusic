@@ -41,9 +41,13 @@
 		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
 
 		<!-- Images -->
+		<MauiImage Include="Resources\Images\play_circle.svg" BaseSize="30,30" />
+		<MauiImage Include="Resources\Images\grid_view.svg" BaseSize="30,30" />
+		<MauiImage Include="Resources\Images\cell_tower.svg" BaseSize="30,30" />
+		<MauiImage Include="Resources\Images\library_music.svg" BaseSize="30,30" />
+		<MauiImage Include="Resources\Images\search.svg" BaseSize="30,30" />
 		<MauiImage Include="Resources\Images\*" />
-		<MauiImage Include="Resources\Images\dotnet_bot.svg" BaseSize="30,30" />
-
+		
 		<!-- Font -->
 		<MauiFont Include="Resources\Fonts\*" />
 
