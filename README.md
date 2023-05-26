@@ -2,21 +2,20 @@
 
 ## 📝 Purpose
 
-Copy/paste the **Library** tab of the [AppleMusic](https://www.apple.com/fr/apple-music/) app with [MAUI](https://learn.microsoft.com/en-us/dotnet/maui).
+Copy/paste the *Library* tab of the [AppleMusic](https://www.apple.com/fr/apple-music/) app with [**MAUI**](https://learn.microsoft.com/en-us/dotnet/maui).
 
     - Available on Android & IOS
     - Only work on view (no model/databiding)
     - Use theme (light/dark)
 
-## 🛠 Language & tools
+## 🛠 Languages & tools
 
-![skills](https://skillicons.dev/icons?i=dotnet,cs,visualstudio)
+![skills](https://skillicons.dev/icons?i=cs,dotnet,visualstudio)           
 
 ## 📍 Visuals
 
-> The original screenshots have been taken using an IPhone.
-> It might be some differences with the Clone-App that belongs on an Android.
-
+> Please note that the screenshots from the original app were taken with an Iphone.
+> Thoses of the "Clone-app" were taken with an Android with a different resolution.
 
 <details><summary> Library section </summary>
 
